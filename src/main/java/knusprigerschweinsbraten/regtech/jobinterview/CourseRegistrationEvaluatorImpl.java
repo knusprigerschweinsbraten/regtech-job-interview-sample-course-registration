@@ -1,5 +1,7 @@
 package knusprigerschweinsbraten.regtech.jobinterview;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 import java.util.Map;
 import java.util.function.BinaryOperator;
@@ -13,6 +15,7 @@ import static java.util.stream.Collectors.toMap;
  * @author stefan.pachler
  * @since 0.0.1
  */
+@Component
 class CourseRegistrationEvaluatorImpl implements CourseRegistrationEvaluator {
     @Override
     public List<String> findAllParticipants(List<CourseRegistration> registrations) {
