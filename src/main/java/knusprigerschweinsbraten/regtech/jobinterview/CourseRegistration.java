@@ -24,8 +24,8 @@ public class CourseRegistration {
         return courseParticipant;
     }
 
-    public RegistrationStatus getRegistrationStatus() {
-        return registrationStatus;
+    public boolean isEnrolled() {
+        return RegistrationStatus.ENROLLED == registrationStatus;
     }
 
     public LocalDate getRegistrationDate() {
