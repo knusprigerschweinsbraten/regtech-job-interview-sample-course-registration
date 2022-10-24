@@ -49,7 +49,7 @@ public class CourseRegistration {
      * @since 0.0.1
      */
     private enum RegistrationStatus {
-        ENROLLED, CANCELED
+        ENROLLED, DISENROLLED
     }
 
     /**
@@ -58,8 +58,8 @@ public class CourseRegistration {
      * @author stefan.pachler
      * @since 0.0.2
      */
-    static class Enrolment extends CourseRegistration {
-        Enrolment(String courseParticipant, String registrationDate) {
+    static class Enrollment extends CourseRegistration {
+        Enrollment(String courseParticipant, String registrationDate) {
             super(courseParticipant, RegistrationStatus.ENROLLED, LocalDate.parse(registrationDate));
         }
     }
@@ -72,7 +72,7 @@ public class CourseRegistration {
      */
     static class Disenrollment extends CourseRegistration {
         Disenrollment(String courseParticipant, String registrationDate) {
-            super(courseParticipant, RegistrationStatus.CANCELED, LocalDate.parse(registrationDate));
+            super(courseParticipant, RegistrationStatus.DISENROLLED, LocalDate.parse(registrationDate));
         }
     }
 }
