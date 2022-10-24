@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * Evaluates which people are currently participating in a course.
  *
- * As a course participant I can register to a course but I am also allowed to cancel whenever I want.
- * After a cancellation I can also register again, and so on and so forth.
+ * As a course participant I can enroll to a course, but I am also allowed to disenroll whenever I want.
+ * After a disenrollment I can also enroll again, and so on and so forth.
  *
  * The current registration is the chronologically last registration a course participant sent.
  *
